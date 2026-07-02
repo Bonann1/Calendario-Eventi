@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collegiata di Foiano — Calendario Eventi</title>
+  <meta name="description"
+    content="Calendario unico degli eventi della Collegiata di Foiano della Chiana e del Circolo Arci.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <svg class="signature" viewBox="0 0 108 60" aria-hidden="true" focusable="false">
+      <circle class="c-chiesa" cx="38" cy="30" r="26" />
+      <circle class="c-arci" cx="70" cy="30" r="26" />
+    </svg>
+    <span class="utility eyebrow">Calendario Eventi</span>
+    <h1>Collegiata di Foiano</h1>
+    <p class="lede">Gli appuntamenti della parrocchia e del Circolo di Foiano, insieme in un unico calendario condiviso.
+    </p>
+  </header>
+
+  <div class="rule"></div>
+
+  <section class="legend" aria-label="Filtra per categoria">
+    <button type="button" class="legend-card is-active" data-cal="chiesa" aria-pressed="true">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="utility">Collegiata</span>
+      <h3>Eventi parrocchia</h3>
+      <p>Messe speciali, festività, processioni, catechismo e sacramenti.</p>
+    </button>
+    <button type="button" class="legend-card is-active" data-cal="arci" aria-pressed="true">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="utility">Circolo Foiano</span>
+      <h3>Attività e serate</h3>
+      <p>Cene, tornei, serate a tema e iniziative del circolo.</p>
+    </button>
+    <p class="legend-hint">Clicca su una categoria per mostrare o nascondere i suoi eventi nel calendario.</p>
+  </section>
+
+  <main>
+    <div class="calendar-frame"
+      data-cal-chiesa="66f999fdba01ab49919cdde71c634662d8b7b23a79f35a3677229e3b7bf9d7e0@group.calendar.google.com"
+      data-cal-arci="5f3790e0876d83e32b16b7fda3338f9f593b916a57b2682322a375c20fe2f430@group.calendar.google.com">
+      <iframe id="cal-iframe" title="Calendario eventi" src="" scrolling="no" loading="lazy"></iframe>
+      <div class="cal-empty" hidden>Seleziona almeno una categoria per vedere gli eventi.</div>
+    </div>
+    <p class="hint">Vista mensile · tocca un evento per vederne i dettagli.</p>
+  </main>
+
+  <footer>
+    <span class="utility">Calendario eventi</span>
+    Calendario aggiornato in automatico — per modifiche agli eventi contatta l'amministrazione.
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
